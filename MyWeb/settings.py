@@ -1,6 +1,5 @@
 import django_heroku
 import os
-import dj_database_url
 from decouple import config
 
 
@@ -46,7 +45,6 @@ INSTALLED_APPS = [
     'blog',
     'accounts',
     'crispy_forms',
-    'django_heroku',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
