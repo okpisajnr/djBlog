@@ -154,6 +154,6 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'mokpisa@gmail.com'
 #STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
-STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
