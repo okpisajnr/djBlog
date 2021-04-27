@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in object_list %}
+
+        <div class="card">
+            <div class="card-header">
+                StoryLIne
+            </div>
+            <div class="card-body style="max-width: 18rem;">
+                <h2 class="card-title">{{post.title}}</h2>
+                <p class="card-text">{{post.text}}</p>
+                <a <a href="{% url 'post_details' post.pk %}" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="card-footer bg-transparent ">
+            By {{post.author}} |  {{post.pub_date}}
+            </div>
+        </div>
+        <br>
+
+          
+    {% endfor %}
+{% endblock content %}
