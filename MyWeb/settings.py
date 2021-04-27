@@ -1,5 +1,5 @@
-import os
 import django_heroku
+import os
 import dj_database_url
 from decouple import config
 
@@ -130,6 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+STATIC_ROOT = [str(BASE_DIR.joinpath('staticfiles'))]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -152,7 +153,7 @@ EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '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'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'mokpisa@gmail.com'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
