@@ -1,5 +1,6 @@
-import django_heroku
 import os
+import django_heroku
+
 from decouple import config 
 
 from pathlib import Path
@@ -17,7 +18,7 @@ SECRET_KEY = 'django-insecure-ke#145a_dbgs5lwk7@8_t%tgsl41+o0qh99(bslnpi8g3sbh3g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['okpisablog.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
