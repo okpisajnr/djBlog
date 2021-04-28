@@ -1,8 +1,8 @@
 import django_heroku
-""" import os
+import os
 from decouple import config 
 
-
+""" 
 
 Django settings for MyWeb project.
 
@@ -145,7 +145,6 @@ EMAIL_HOST_PASSWORD = 'M1ch@31oP@55w0r9'
  """
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
@@ -154,12 +153,5 @@ EMAIL_HOST_PASSWORD = 'SG.MivIUk1lQHS500UOotbNAg.VGMJZOlz5IoSwTg74m33os7cYiw8b1r
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'mokpisa@gmail.com'
 #STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
-#STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
 
 django_heroku.settings(locals())
