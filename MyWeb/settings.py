@@ -1,6 +1,5 @@
 import os
 import django_heroku
-
 from decouple import config 
 
 from pathlib import Path
