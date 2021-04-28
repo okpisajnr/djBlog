@@ -1,6 +1,6 @@
 import os
 import django_heroku
-from decouple import config 
+#from decouple import config 
 
 from pathlib import Path
 
@@ -139,6 +139,5 @@ EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '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'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'mokpisa@gmail.com'
-#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 django_heroku.settings(locals())
