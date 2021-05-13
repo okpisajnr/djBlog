@@ -9,7 +9,7 @@ Hello this is a CRUD App design with django
 
 username : admin
 
-Password: P@55w0r9
+Password: *******
 
 #
 - {+ User Login detais +}
